@@ -5,3 +5,28 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Product.delete_all
+
+Product.create!(title: 'Programming Ruby 1.9 & 2.0',
+  description: %{
+                <p>
+                  Ruby is the fastest growing and most exciting dynamic language
+                  out there. If you need to get working programs delivered fast,
+                  you should add Ruby to you toolbox.
+                </p>}, 
+  image_url: 'ruby.jpg',
+  price: 49.95)
+  
+Product.create!(title: 'CoffeeScript',
+  description: %{
+                <p>
+                  CoffeeScript is JavaScript done right. It provides all of 
+                  JavaScript's functionality wrapped in a cleaner, more succinct 
+                  syntax. In the first CoffeeScript book on this exciting new language,
+                  CoffeeScript guru Trevor Burnham shows how to hold onto all the
+                  power and flexibility of JavaScript while writing clearer, cleaner,
+                  and safer code.
+                </p>
+                },
+  image_url: 'cs.jpg',
+  price: 36.0)
