@@ -19,6 +19,13 @@
 				<li><a href = "http://www..../faq"> Questions </a></li>
 				<li><a href = "http://www..../news"> News </a></li>
 				<li><a href = "http://www..../contact"> Contact </a></li>
+				<div id = "date_time">
+					<ul>
+						<li><p><%= Time.now.strftime("%I:%M:%S %p") %></p></li>
+						<li><p><%= Time.now.strftime("%A %B %d, %Y")%></p></li>	
+					</ul>
+				</div>
+				
 			</ul>
 		</div>
 		<div id = "main">
