@@ -21,8 +21,8 @@ class CombineItemsInCart < ActiveRecord::Migration
         LineItem.create cart_id: line_item.cart_id,
         product_id: line_item.product_id, quantity: 1
       end
+      
       line_item.destroy
     end
   end
-  
 end
