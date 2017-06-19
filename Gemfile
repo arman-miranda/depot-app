@@ -47,4 +47,4 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 
 gem 'activemerchant', '~> 1.31'
 gem 'haml', '~>4.0'
-gem 'kaminari', '~>0.14'
+gem 'will_paginate', '~>3.1.1'
